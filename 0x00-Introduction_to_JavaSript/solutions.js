@@ -81,3 +81,65 @@ function basketBallPoints(twoPointers, threePointers) {
 
 
 // #8 is sum less than 100
+
+function isSumMoreThan100(val1, val2) {
+    let sum = val1 + val2;
+
+    if (sum > 100) {
+        return true;
+    } else {
+        return false
+    }
+}
+
+//let check_sum = isSumMoreThan100(72, 38)
+
+// #9 convert minutes to second.
+// function convertToSeconds(minutes) {
+//     // 1 min = 60s
+//     let convert_to_seconds = minutes * 60
+//     if (convert_to_seconds === 0) {
+//         return 0;
+//     } else if(convert_to_seconds === 1 ) {
+//         return `${convert_to_seconds} second`
+//     } else {
+//         return `${convert_to_seconds} seconds`
+//     }
+
+// }
+
+// let check = convertToSeconds(0.239020923)
+// console.log(check)
+
+// #10 Greater among three.
+// function greater(value1, value2, value3) {
+//     if (value1 > value2 && value1 > value3){
+//         return value1
+//     } else if (value2 > value1 && value2 > value3) {
+//         return value2
+//     } else if (value1 === value2 & value2 == value3){
+//         return value3
+//     } else {
+//         return value3
+//     }
+// }
+
+// let test = greater(4, 45, 3)
+// console.log(test)
+
+
+// #11 Lease of three.
+function least(input1, input2, input3){
+    if (input1 > input2 && input2 < input3) {
+        return input2
+    } else if (input2 > input3 && input3 < input1){
+        return input3
+    } else if(input1 === input2 && input2 === input3) {
+        return input3
+    } else {
+        return `${input1} is less`
+    }
+}
+
+let checker = least(2, 35, 9)
+console.log(checker)
