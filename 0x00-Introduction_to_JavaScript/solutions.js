@@ -94,19 +94,19 @@ console.log(check)
 
 // #10 Greater among three.
 function greater(value1, value2, value3) {
-    if (value1 > value2 && value1 > value3){
+    if(value1 == value2 && value2 == value3){
+        return `Equal`
+    } else if (value1 >= value2 && value1 >= value3) {
         return value1
-    } else if (value2 > value1 && value2 > value3) {
+    } else if (value2 >= value1 && value2 >= value3) {
         return value2
-    }else if (value3 > value1 && value3 > value2) {
-        return value3
     } else {
-        return value1
+        return value3
     }
 }
 
-let test = greater(45, 3, 45)
-console.log("Greatest of the three -> "+ test)
+let test = greater(5, 3, 4)
+console.log("Greatest of the three -> " + test)
 
 
 // #11 Least of three.
@@ -122,8 +122,8 @@ function least(input1, input2, input3){
     }
 }
 
-let checker = least(35, 3, 35)
-console.log(checker)
+let checker = least(53, 5, 53)
+console.log("Least of the three " + checker)
 
 // # 12 Footeball points.
 function footballPoints(no_of_games_won, no_of_games_drawn, no_of_games_lost){
@@ -142,7 +142,6 @@ console.log(checkGoals)
 function isEven (number) {
      
     for(let a = 0; number <= 101; a++) {
-        // console.log(number)
         if(number % 2 != 0) {
             return false 
         }else {
@@ -152,5 +151,11 @@ function isEven (number) {
     }
 }
 
-let evenNumber = isEven(99)
+for(let a = 0; a <= 100; a++) {
+    if(isEven(a)) {
+        console.log(a)
+    }
+
+}
+let evenNumber = isEven(100)
 console.log(evenNumber)
